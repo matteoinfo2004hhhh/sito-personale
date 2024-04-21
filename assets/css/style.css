@@ -4,10 +4,10 @@
   --bg-color-nero:#ffffff;
   --bg-color-nero2:#eeeeee;
   --bg-color-nero3:#dae5ec;
-  --bg-color-nerosf:#f0f0f09d;
-  --bg-color-azzuro:#14c2dd;
-  --bg-color-azzuros:rgba(15, 136, 184, 0.95);
-  --bg-color-grigio:#bdbdbd;
+  --bg-color-nerosf:#e0e0e07e;
+  --bg-color-azzuro:#0066ffea;
+  --bg-color-azzuros:rgb(59, 37, 255);
+  --bg-color-grigio:#5e5c5c;
   --bg-color-blu-scuro:#0b5c9e;
 }
 
@@ -16,7 +16,7 @@
   --bg-color-nero:#050505;
   --bg-color-nero2:#1d1d1d;
   --bg-color-nero3:#292929;
-  --bg-color-nerosf:#1110109d;
+  --bg-color-nerosf:#646464c7;
   --bg-color-azzuro:#43dd14;
   --bg-color-azzuros:rgba(43, 184, 15, 0.95);
   --bg-color-grigio:#bdbdbd;
