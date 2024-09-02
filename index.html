@@ -1,583 +1,931 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Il mio sito personale</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
-
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>portfolio</title>
 </head>
+<body>
+<header class="header">
+<a href="#" class="logo">Portfolio</a>
+<i class='bx bx-menu' id="menu-icon"></i>
+<nav class="navbar">
+<a href="#home" class="active">Home</a>
+<a href="#about">Chi sono</a>
+<a href="#services">Competenze</a>
+<a href="#portfolio">Progetti</a>
+<a href="#contact">Contattami</a>
+</nav>
+</header>
+<section class="home" id="home">
+<div class="home-content">
+<h3>Ciao</h3> 
+<h1><span>MATTEO BARCELLONA</span></h1>
+<h3>io sono un <span class="multiple-text"> </span></h3>
+<p>Ciao! Ti do il benvenuto sul mio portfolio, dove troverai tutte le attività che ho realizzato tra cui: videogiochi, animazioni, programmi 
+    e lavori svolti durante la scuola. Sono appassionato di nuove sfide creative e mi piace mettere alla prova le mie competenze in diversi 
+    campi. Nel mio percorso ho dedicato tempo ed energie per sviluppare progetti che riflettono la mia passione per l'innovazione e la qualità.
+     Oltre ad esplorare il mio portfolio, puoi contattarmi per ulteriori dettagli. A presto!</p>
+<div class="social-media">
+    <a href="https://github.com/matteoinfo2004hhhh?tab=repositories"> <i class='bx bxl-github' ></i></a>
+    <a href="https://docs.google.com/document/d/14AxwaIeIQBPSyfFzqvz4mQf4Yl30GkyIjnxx7JDqXAQ/edit?usp=sharing"> <i class='bx bxs-joystick' ></i></a>
+    <a href="#" id="myLink"> <i class='bx bxs-music'></i></a>
+    <a onclick="myFunction()"><i class='bx bx-moon' ></i></a>
+</div>
+<a href="https://replit.com/@matteobarcello1" class="btn" style="margin: 10px;">Mio Replit</a>
+</div>
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-    <div class="profile-img">
-      <img src="assets/img/profilo.jpeg" alt="" class="img-fluid rounded-circle">
-    </div>
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Matteo Barcellona</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="cv-matteo.pdf" class="twitter"><i class="bi bi-file-text-fill"></i></a>
-      <a onclick="myFunction()" class="facebook"><i class="bi bi-moon"></i></a>
-      <a href="https://github.com/matteoinfo2004hhhh?tab=repositories" class="instagram"><i class="bi bi-github"></i></a>
-      <a href="https://it.linkedin.com/in/matteo-barcellona-33a439319?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fit.linkedin.com%2Fpub%2Fdir%2FMatteo%2FBarcellona%2Fit-0-Italia" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="index inglese.html" class="google-plus"><i class="flag-icon flag-icon-gb"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i>Chi sono</a></li>
-        <li><a href="#portfolio"><i class="bi bi-pc-display navicon"></i> Esperienza IT</a>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Servizi</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contattami</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="https://matteoinfo2004hhhh.github.io/Portfolio-Matteo/"><i class="bi bi-journal-bookmark-fill navicon"></i> Portfolio</a>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-    <section id="hero" class="hero section">
-      <img src="assets/img/matteo.png" alt="" data-aos="fade-in" class="">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Matteo Barcellona Salvatore</h2>
-        <div class="col-lg-8 content">
-        <h3 style="font-size: 57px;"><span class="typed" data-typed-items="Web Developer, Programmatore, Creatore di videogiochi" style="color: var(--accent-color);">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></h3>
-      </div>
-    </div>
-    </section>
-
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Chi Sono</h2>
-          <p>Ciao! Ti do il benvenuto sul mio sito personale, dove troverai tutte le attività che ho realizzato tra cui: videogiochi, animazioni, programmi  e lavori svolti durante la scuola. Sono appassionato di nuove sfide creative e mi piace mettere alla prova le mie competenze in diversi   campi. Nel mio percorso ho dedicato tempo ed energie per sviluppare progetti che riflettono la mia passione per l'innovazione e la qualità.
-             Oltre ad esplorare il mio sito, puoi contattarmi per ulteriori dettagli. A presto!</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/matteoo.png" class="img-fluid" alt="" style="border: solid var(--accent-color) 5px; border-radius: 7px;" >
-          </div>
-          <div class="col-lg-8 content">
-            <h3>Programmatore &amp; Web Developer.</h3>
-            <p class="fst-italic">
-              Ciao sono Matteo Barcellona, mi fa piacere conoscerti! Ho frequentato la scuola superiore JC Maxwell di Nichelino. Nel corso della mia esperienza scolastica, ho realizzato che la vita va oltre i voti e ho imparato ad apprezzare il percorso che ho intrapreso trovando nell’informatica una passione che va oltre la scuola. 
-              Durante il secondo anno del biennio, infatti, ho fatto una scoperta che ha cambiato la mia prospettiva: la possibilità di creare videogiochi.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Data di nascità:</strong><span>27/09/2004.</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Paese:</strong><span>Italia.</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Città:</strong><span>Torino.</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Titolo di studio:</strong><span>Diploma tecnico di informatica.</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Hobby:</strong><span>Giocare Videogiochi.</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                 <li><i class="bi bi-chevron-right"></i> <strong>Port-folio:</strong><span><a href="https://matteoinfo2004hhhh.github.io/Portfolio-Matteo/">clicca il link.</a></span></li>
-                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong><span>matteobarcellona31@gmail.com.</span></li>
-                 <li><i class="bi bi-chevron-right"></i> <strong>Replit:</strong><span><a href="https://replit.com/@matteobarcello1">clicca il link.</a></span></li>
-                 <li><i class="bi bi-chevron-right"></i> <strong>Linkelind:</strong><span><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">clicca il link.</a></span></li>
-                 <li><i class="bi bi-chevron-right"></i> <strong>Uso app Microsoft:</strong><span>Word,Power point,Exel.</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>I miei primi progetti hanno acceso la mia passione per l'informatica, spingendomi ad esplorare il mondo affascinante della creazione di giochi. Questa avventura ha rappresentato per me non solo una crescita accademica, ma anche un'opportunità di esplorare la creatività e la sfida intellettuale. Sono entusiasta di continuare il mio percorso in questo campo affascinante.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
+<div class="home-img">
+  <img src="immagini/matteo.png" alt="" style="border-radius: 5rem ;border: 1rem solid var(--main-color2);  box-shadow: 0 0 5rem var(--main-color);position: relative;left: 20px; width: 300px;height: 300px;">
+</div>
+</section>
+  <script>     
+    var audio = new Audio("immagini/m.mp3");
+    document.getElementById("myLink").addEventListener("click", function() {
+      playSound();
+    });
+    audio.addEventListener("ended", function() {
+      playSound();
+    });
+    function playSound() {
+      audio.currentTime = 0;
+      audio.play();
+    }
+      </script>
   
-    <section id="skills" class="skills section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Le mie Skills</h2>
-        <p>Buona competenza nei linguaggi di programmazione Java e JavaScript, con abilità avanzate nell'utilizzo di Node.js, Bootstrap, HTML e CSS. Ho familiarità con i programmi di Microsoft 365 e Documenti Google. Possiedo un'ottima conoscenza del front-end e una buona conoscenza del back-end. Per visualizzare le competenze in questi linguaggi, clicca sui loro nomi nel link che porta al GitHub.</p>
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="immagini/matteo.png" alt="" style="border-radius: 5rem ; border: 1rem solid var(--main-color2);  box-shadow: 0 0 5rem var(--main-color);width: 300px;height: 300px;">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">Chi sono <span>io</span></h2>
+      <h3>Matteo Barcellona</h3>
+      <p>Ciao sono Matteo Barcellona, mi fa piacere conoscerti! Ho frequentato la scuola superiore con indirizzo informatica. Nel corso della mia esperienza scolastica, ho realizzato che la vita va oltre i voti e ho imparato ad apprezzare il percorso che ho intrapreso trovando nell’informatica una passione che va oltre la scuola. 
+        Durante il secondo anno del biennio, infatti, ho fatto una scoperta che ha cambiato la mia prospettiva: la possibilità di creare videogiochi. I miei primi progetti hanno acceso la mia passione per l'informatica, spingendomi ad esplorare il mondo affascinante della creazione di giochi. Questa avventura ha rappresentato per me non solo una crescita accademica, ma anche un'opportunità di esplorare la creatività e la sfida intellettuale. Sono entusiasta di continuare il mio percorso in questo campo affascinante.         
+      </p>
+      <a href="https://www.canva.com/design/DAFw3lTLrG8/6pBU-dAwyj6p1Ssy8bRYbw/edit?utm_content=DAFw3lTLrG8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn">Visita</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="heading">Le mie <span>competenze</span></h2>
+   <div class="services-container">
+
+    <div class="services-box">
+        <img src="immagini/c++.png" style="width: 70px;height: 70px;">
+          <h3>C++</h3>
+          <p>Nella seguente casella troverai una raccolta dei programmi da me sviluppati in c++ che ho utilizzato come  base per poter sviluppare le conoscenze di altri linguaggi.
+          </p>
+          <a href="c++ep.html" class="btn">Visita</a>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/eserciziario-in-HTML">HTML</a>    <i class="val">100%</i>   </span>
-              <div class="progress-bar-wrap">
-               <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-               </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/eserciziario-in-CSS">CSS</a> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/eserciziario-in-CSS">JavaScript</a>  <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/esercizioario-Java">Java</a>  <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/esercizi-python">Python</a>  <i class="val">68%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/esercizi-php">PHP</a>  <i class="val">73%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">  <a href="https://github.com/matteoinfo2004hhhh/espereinza-node.js">Node.js</a><i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/esperienza-SQL">SQL(XAMP)</a> <i class="val">45%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/eserciziario-C-">C++</a> <i class="val"> 71%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> <a href="https://github.com/matteoinfo2004hhhh/esperienza-Angular">Angular </a> <i class="val">15%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Esperienza IT</h2>
-        <p>Nella sezione dedicata all'Esperienza Informatica del mio sito, condivido le mie competenze tecniche, esperienze professionali, progetti personali e certificazioni rilevanti. Attraverso una descrizione concisa e chiara, evidenzio le mie abilità in vari linguaggi di programmazione, framework e strumenti informatici, oltre alle mie capacità di lavorare su progetti complessi e di contribuire a progetti open source.</p>
-      </div>
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tutti</li>
-            <li data-filter=".filter-app">Progetti</li>
-            <li data-filter=".filter-product">Videogiochi</li>
-            <li data-filter=".filter-books">Altro</li>
-          </ul>
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/pacgame.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>PACMAN ARENA</h4> 
-                  <p>ho creato questo gioco perché avevo giocato a pac-man in passato, e mentre mi muovevo nel labirinto per mangiare, ho pensato di renderlo più piacevole. ho deciso di rimuovere il labirinto perché lo trovavo scomodo e ho trasformato il gioco in una sfida di sopravvivenza contro i fantasmi.il gioco è stato realizzato in html.</p>
-                  <a href="assets/img/portfolio/pacgame.png" title="VIDEOGIOCO" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="pacmansito.html" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/mario.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>SUPER MARIO ARENA</h4>
-                  <p>Ho sviluppato un gioco ispirato a Super Mario, pensato per essere giocato in coppia. L'idea è nata combinando elementi di Super Mario con il classico Duck Hunt. Questo mix ha dato vita a un'esperienza di gioco originale e coinvolgente. Il progetto è stato realizzato utilizzando HTML.</p>
-                  <a href="assets/img/portfolio/mario.png" title="VIDEOGIOCO" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="suopermariosito.html" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/pallina.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>SPARA PALLINA</h4>
-                  <p>Ho creato questo gioco copiando il codice da YouTube per comprendere come funzionano i giochi di sparare e colpire i nemici. L'obiettivo era imparare il codice e sviluppare nuove competenze. Il gioco è stato realizzato in HTML.</p>
-                  <a href="assets/img/portfolio/pallina.png" title="VIDEOGIOCO" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="sparapallinesito.html" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/calendario.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>Callendario</h4>
-                  <p>Ho creato un calendario in inglese per presentare un progetto internazionale. L'obiettivo era rendere il progetto accessibile e comprensibile a un pubblico di lingua inglese. Questo mi ha permesso di mostrare le mie competenze linguistiche e tecniche. Il calendario è stato sviluppato interamente in HTML.</p>
-                  <a href="assets/img/portfolio/calendario.png" title="Progetto" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://matteoinfo2004hhhh.github.io/calendario/" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/sistemi.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>SISTEMI OPERATIVI</h4>
-                  <p>Ho creato un sito sui sistemi operativi basato sulle mie ricerche su internet e sui miei esperimenti con VirtualBox. L'obiettivo era condividere ciò che avevo imparato e le mie esperienze pratiche. Il sito offre informazioni dettagliate e guide pratiche sui vari sistemi operativi.</p>
-                  <a href="assets/img/portfolio/sistemi.png" title="Progetto" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://matteoinfo2004hhhh.github.io/sistemi-operativi/" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/INFORMATICA.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>INFORMATICA SISTEMI</h4>
-                  <p>Ho creato un sito per studiare informatica in modo tecnico, basato su ricerche su internet e esperimenti con VirtualBox. L'obiettivo era approfondire e condividere conoscenze sui sistemi operativi. Il sito fornisce informazioni dettagliate e guide pratiche, supportando l'apprendimento tecnico dell'informatica.</p>
-                  <a href="assets/img/portfolio/INFORMATICA.png" title="Progetto" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://matteoinfo2004hhhh.github.io/primo-sito-web-developer/" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/java.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>azienda di informatica node.js</h4>
-                  <p>Ho creato un sito per studiare informatica in modo tecnico, basato su ricerche online e esperimenti con VirtualBox. Utilizzando Bootstrap 5, il sito offre una struttura moderna e responsiva. Fornisce informazioni dettagliate sui sistemi operativi, con guide pratiche e risorse utili.</p>
-                  <a href="assets/img/portfolio/java.png" title="Progetto sito esempio" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://matteoinfo2004hhhh.github.io/bs5-azienda-informatica-esempio/" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/pp.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>Menu-bs5</h4>
-                  <p>Ho creato un sito per studiare informatica in modo tecnico, basato su ricerche online e esperimenti con VirtualBox. Utilizzando Bootstrap 5, il sito offre una struttura moderna e responsiva. Fornisce informazioni dettagliate sui sistemi operativi, con guide pratiche e risorse utili. In questo portfolio trovi tutte le competenze che ho accumulato nel tempo.</p>
-                  <a href="assets/img/portfolio/pp.png" title="Port-folio" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://matteoinfo2004hhhh.github.io/menu-bs5/" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/api.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>API LOGIN</h4>
-                  <p>questo sito per vederlo devi accedere a replit</p>
-                  <a href="assets/img/portfolio/api.png" title="Progetto form" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://replit.com/@matteobarcello1/login-api" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/C++.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>Come fare il titolo in C++</h4>
-                  <p>Il programma C++ stampa il titolo del progetto come output utilizzando la funzione `cout` della libreria iostream. Questo esempio semplice dimostra l'uso di base dell'output in C++, dove il testo "Titolo del mio progetto in C++" viene visualizzato sulla console quando il programma viene eseguito.</p>
-                  <a href="assets/img/portfolio/C++.png" title="Progetto" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="progetto c dev.html" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/pong.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>PONG C++</h4>
-                  <p>Ho utilizzato Microsoft Visual Studio Code per sviluppare il mio progetto in C++. Questo ambiente di sviluppo mi ha fornito un'interfaccia intuitiva e funzionale per scrivere, testare e debuggare il codice. Con l'aiuto delle estensioni disponibili, ho potuto personalizzare il mio ambiente di lavoro per adattarlo alle esigenze specifiche del progetto.</p>
-                  <a href="assets/img/portfolio/pong.png" title="VIDEOGIOCO" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="giocopongc.html" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/py.png" class="img-fluid" alt="" style="height: 350px;">
-                <div class="portfolio-info">
-                  <h4>Progetto Python</h4>
-                  <p>Ho creato un esempio di dataset in Python utilizzando una lista di dizionari, dove ogni dizionario rappresenta una riga di dati con attributi specifici. Questo approccio consente di organizzare e manipolare dati in modo strutturato.</p>
-                  <a href="assets/img/portfolio/py.png" title="Progetto" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="progettopy.html" title="More Details" class="details-link"><i class="bi bi-arrow-up-right-square"></i></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="services" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Servizi</h2>
-        <p>Nella sezione "Servizi" del mio sito, presento le offerte e le competenze che posso fornire ai miei clienti. Questa sezione fornisce una panoramica chiara dei servizi che offro, come consulenza informatica, sviluppo di siti web personalizzati, progettazione di interfacce utente, ottimizzazione SEO e altro ancora. Ogni servizio è descritto in modo conciso e accurato, evidenziando i benefici che i clienti possono ottenere collaborando con me.</p>
-      </div>
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="cartificato.html" class="stretched-link">Certificazioni</a></h4>
-              <p class="description">Ho acquisito delle certificazioni Cisco e altre presso Enaip Piemonte
-                per la sicurezza sul lavoro e per l'informatica e programmatore, e altre PCTO per
-                approfondire la conoscenza del mondo digitale.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-controller"></i></div>
-            <div>
-              <h4 class="title"><a href="videogiochi.html" class="stretched-link">Videogiochi</a></h4>
-              <p class="description">Ho acquisito competenze nei principali linguaggi di programmazione, imparando a testarli e utilizzarli anche a scuola, come HTML, CSS e JavaScript.
-                Inoltre, ho lavorato con altri linguaggi come Java. Qui troverai i videogiochi che ho creato con vari linguaggi.
-                Buon divertimento!.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-filetype-css"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Front-and</a></h4>
-              <p class="description">Nella sezione "Front-End" del mio sito, offro competenze specializzate nel design e nello sviluppo di interfacce utente coinvolgenti e intuitive. Questo include la progettazione e l'implementazione di layout responsive, l'integrazione di elementi grafici e l'ottimizzazione delle prestazioni del sito web.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-browser-edge"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details2.html" class="stretched-link">Web Developer</a></h4>
-              <p class="description">In questo progetto, ho sviluppato diversi siti web utilizzando una combinazione di linguaggi, come HTML per la creazione della pagina principale, CSS per la formattazione e le decorazioni, e JavaScript per implementare modifiche e funzioni. Puoi trovare alcuni esempi di questi siti nel portfolio delle mie competenze.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-bootstrap-fill"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details3.html" class="stretched-link">Bootstrap-5</a></h4>
-              <p class="description">Nel mio progetto, troverai tutti i programmi avanzati che ho realizzato con Bootstrap 5, creando siti web con un design eccezionale. Buon divertimento! Se trovi degli errori, ti prego di correggerli. Ogni sito è stato sviluppato con attenzione al dettaglio per garantire un'esperienza utente fluida e coinvolgente.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-database-check"></i></div>
-            <div>
-              <h4 class="title"><a href="https://replit.com/@matteobarcello1" class="stretched-link">Back-And</a></h4>
-              <p class="description">Nella sezione "Back-End" del mio sito, metto in mostra le mie competenze nel creare e gestire il lato server dei siti web e delle applicazioni. Questo comprende lo sviluppo di logiche di business, la gestione dei database, l'implementazione di funzionalità dinamiche e la sicurezza dei dati. Utilizzo linguaggi di programmazione come Python, Java, PHP o Node.js</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="contact" class="contact section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contattami</h2>
-        <p>Nella sezione Contattami del mio sito, fornisco ai visitatori un modo diretto e conveniente per mettersi in contatto con me. Questo può includere un modulo di contatto, dove gli utenti possono inserire il loro nome, indirizzo email, oggetto del messaggio e il messaggio stesso. In alternativa, potrei fornire informazioni di contatto dirette, come l'indirizzo email, il numero di telefono. Cerco di rendere questa sezione accessibile e accogliente, incoraggiando i visitatori a raggiungermi per domande, richieste di preventivi o per discutere di collaborazioni potenziali.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Indirizzo</h4>
-                  <p>Italia Torino nichelino</p>
-                </div>
-              </div>
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h4>Chiama:</h4>
-                  <p>(+39) 351 909 4940</p>
-                </div>
-              </div>
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>matteobarcellona31@gmail.com</p>
-                </div>
-              </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5555.121906289277!2d7.641069361817841!3d44.99144124634294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4788124ed8fe67ad%3A0x29b4c1a02f75e8f8!2s10042%20Nichelino%20TO!5e1!3m2!1sit!2sit!4v1719999730921!5m2!1sit!2sit" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Il tuo nome</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">La tua Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Il tuo numero di telefono</label>
-                  <input type="text" class="form-control" name="number" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Scrivi la domanda</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <button type="submit">Invia messaggio</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer id="footer" class="footer position-relative">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sito personale</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        Designed by Matteo Barcellona</a>
-      </div>
+    <div class="services-box">
+       <img src="immagini/javaa.png" style="width: 70px;height: 80px;">
+        <h3>JAVA</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi da me sviluppati in java come le basi della programmazione e videogames Gui.
+        </p>
+        <a href="javaep.html" class="btn">Visita</a>
     </div>
 
-  </footer>
+    <div class="services-box" >
+        <img src="immagini/HTMLL.png" style="width: 70px;height: 70px;">
+         <h3>HTML</h3>
+         <p>Nella seguente casella troverai una raccolta dei programmi da me sviluppati utilizzando HTML come siti web e librerie per componenti.
+         </p>
+         <a href="htmlep.html" class="btn">Visita</a>
+     </div>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
+    <div class="services-box">
+       <img src="immagini/csss.png" style="width: 70px;height: 70px;">
+        <h3>CSS</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi sviluppati in css utile nella creazione dei siti web in html per migliorare la resa grafica.
+        </p>
+        <a href="cssep.html" class="btn">Visita</a>
+    </div>
+    <div class="services-box">
+       <img src="immagini/js.png" style="width: 60px;height: 60px;">
+        <h3>JavaScript</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi sviluppati in Javascript come calcoli e movimenti dei componenti utili nella creazione dei siti web in HTML e videogiochi.
+        </p>
+        <a href="jsep.html" class="btn">Visita</a>
+       </div>
+
+       <div class="services-box">
+         <img src="immagini/Python-logo-notext.svg.png" style="width: 70px;height: 70px;">
+        <h3>Python</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi sviluppati in Python, un linguaggio molto semplice ed utilizzato da tutte le aziende come base della programmazione. 
+        </p>
+        <a href="pyep.html" class="btn">Visita</a>
+       </div>
+
+       <div class="services-box">
+         <img src="immagini/php.png" style="width: 80px;height: 70px;">
+        <h3>PHP</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi sviluppati in PHP, un linguaggio molto semplice utilizzato per costruire siti web e per la grafica.
+        </p>
+        <a href="phpe.html" class="btn">Visita</a>
+       </div>
+
+       <div class="services-box">
+          <img src="immagini/njs.png" style="width: 70px;height: 70px;">
+        <h3>Node.js</h3>
+        <p>Nella casella seguente, troverai una raccolta dei programmi sviluppati in Node.js, il linguaggio utilizzato per creare applicazioni client-server.
+        </p>
+        <a href="nodejsep.html" class="btn">Visita</a>
+       </div>
+
+       <div class="services-box">
+        <i class='bx bxl-jquery' style="color: rgb(0, 132, 255);"></i>
+        <h3>Jquery</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi sviluppati in Jquery un linguaggio un pò più complesso, utilizzato nella costruzione di  siti web.
+        </p>
+        <a href="jquery.html" class="btn">Visita</a>
+       </div>
+
+       <div class="services-box">
+        <img src="immagini/web socket.png" style="width: 70px;height: 70px;">
+        <h3>web Socket</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi sviluppati utilizzando WebSockets, una tecnologia avanzata di comunicazione bidirezionale in tempo reale tra il Client e il Server.
+        </p>
+        <a href="websocket.html" class="btn">Visita</a>
+       </div>
+
+       <div class="services-box">
+        <img src="immagini/Logo_C_sharp.svg.png" style="width: 70px;height: 73px;">
+        <h3>C#</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi sviluppati con C# è utilizzato per creare applicazioni complesse e dinamiche su varie piattaforme come Unity 3D.            
+        </p>
+        <a href="Csep.html" class="btn">Visita</a>
+       </div>
 
 
-  <script>
+       <div class="services-box">
+        <img src="immagini/ts.png" style="width: 70px;height: 70px;">
+        <h3>TypeScript</h3>
+        <p>Nella seguente casella troverai una raccolta dei programmi sviluppati con TypeScript (TS), un linguaggio di programmazione che estende JavaScript aggiungendo tipi statici al linguaggio.
+        </p>
+        <a href="ts.html" class="btn">Visita</a>
+       </div>
 
-  function myFunction() {
-       var element = document.body;
-       element.classList.toggle("dark-mode");
-  }
 
+       <div class="services-box">
+          <img src="immagini/angular.png" style="width: 80px;height: 80px;">
+        <h3>Angular</h3>
+        <p>Nella seguente casella troverai una raccolta di programmi sviluppati in Angular, inclusi calcoli e gestione dei movimenti dei componenti sviluppati in HTML.
+        </p>
+        <a href="angularep.html" class="btn">Visita</a>
+       </div>
+
+       <div class="services-box">
+        <img src="immagini/xml.png" style="width: 70px;height: 70px;">
+        <h3>XML</h3>
+        <p>Nella seguente casella troverai una raccolta di programmi sviluppati in XML, tra cui tabelle e composizioni all'interno di siti web HTML.
+        </p>
+        <a href="XMLep.html" class="btn">Visita</a>
+       </div>
+
+       <div class="services-box">
+        <i class='bx bxl-react' style="color: rgb(0, 255, 255);"></i>
+          <h3>React</h3>
+          <p>  Nella seguente casella troverai una raccolta di programmi sviluppati in React, tra cui calcoli, tutti implementati all'interno di siti web utilizzando HTML.
+          </p>
+          <a href="reacpep.html" class="btn">Visita</a>
+         </div>
+
+       <div class="services-box">
+        <img src="immagini/sql.png" style="width: 70px;height: 70px;">
+          <h3>SQL</h3>
+          <p>Nella seguente casella troverai una raccolta di query sviluppate in SQL, inclusi calcoli, gestione dei dati e interazioni con il database, implementate nel backend di siti web utilizzando HTML.
+          </p>
+          <a href="sqlop.html" class="btn">Visita</a>
+         </div>
+   </div>
+
+
+</div>
+</section>
+
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">I miei<span> progetti</span></h2>
+<div class="portfolio-container">
+  <div class="portfolio-box" >
+    <img src="immagini/gg.jpg" alt="" style="height: 300px;">
+      <div class="portfolio-layer">
+          <h4>Certificati cisco</h4>
+          <p>Ho acquisito una solida formazione ed ho potuto sviluppare le mie competenze nel campo della sicurezza informatica 
+            attraverso corsi, workshop e certificazioni riconosciute. Dimostro  così la mia dedizione a mantenere livelli elevati
+             di conoscenza e professionalità per poter riconoscere gli attacchi ed i pericoli della rete online. </p>
+          <a href="certifiC.html"><i class='bx bx-link-external'></i></a>
+      </div>
+  </div>
+
+  <div class="portfolio-box">
+    <img src="immagini/games.jpg" alt="" style="height: 300px;">
+      <div class="portfolio-layer">
+          <h4>Videogiochi</h4>
+          <p>Ho acquisito delle competenze nello sviluppo dei linguaggi di programmazione principali che ho imparato a scrivere e testare anche a scuola come html css e
+             js e java. Qui troverai i videogiochi che ho fatto con vari linguaggi. Buon divertimento!
+          </p>
+          <a href="VIDEOGIOCHI.html"><i class='bx bx-link-external'></i></a>
+      </div>
+  </div>
+
+  <div class="portfolio-box">
+    <img src="immagini/ssssssss.jpg" alt="" style="height: 300px;">
+      <div class="portfolio-layer">
+          <h4>Software Developer</h4>
+          <p>In questo progetto ho condotto un'approfondita analisi delle vulnerabilità testando  un'applicazione web critica al fine di identificare le potenziali falle di sicurezza.</p>
+          <a href="software developer.html"><i class='bx bx-link-external'></i></a>
+      </div>
+  </div>
+
+  <div class="portfolio-box">
+    <img src="immagini/ddd.webp" alt="" style="height: 300px;">
+      <div class="portfolio-layer">
+          <h4>I miei siti sul Web Developer</h4>
+          <p>In questo progetto ho sviluppato diversi siti web utilizzando una combinazione di linguaggi, come HTML per la creazione della pagina principale, CSS per la formattazione e le decorazioni e JavaScript per 
+            implementare modifiche e funzioni. Puoi trovare alcuni esempi di questi siti nel portfolio delle mie competenze.
+          </p>
+          <a href="web developer.html"><i class='bx bx-link-external'></i></a>
+      </div>
+  </div>
+
+  <div class="portfolio-box">
+    <img src="immagini/bs55.webp" alt="" style="height: 300px;">
+      <div class="portfolio-layer">
+          <h4>I miei progetti in Bootstrap-5</h4>
+          <p>Nel mio progetto troverai tutti i programmi che ho realizzato con Bootstrap 5, creando siti web con un
+             design eccezionale. Buon divertimento! Se trovi degli errori, ti prego di correggerli.</p>
+          <a href="bs5.html"><i class='bx bx-link-external'></i></a>
+      </div>
+  </div>
+
+  <div class="portfolio-box">
+    <img src="immagini/database.png" alt="" style="height: 300px;">
+      <div class="portfolio-layer">
+          <h4>Database Skill</h4>
+          <p>In questo progetto ho accumulato le competenze necessarie per archiviare i dati nel database. Questo permette di utilizzare i dati in maniera efficace  come esempio per valutare cambiamenti a lungo o medio e successivamente personalizzare la loro raccolta per la creazione di grafici.
+        </p>
+          <a href="database.html"><i class='bx bx-link-external'></i></a>
+      </div>
+  </div>
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+<h2 class="heading">Contattami <span>copilando qui elencato</span></h2>
+
+<form action="index.html" method="post">
+    <di class="input-box">
+        <input type="text" placeholder="Nome" id="Nome" name="Nome">
+        <input type="text" placeholder="Cognome" id="Cognome" name="Cognome">
+    </div>
+
+    <di class="input-box">
+        <input type="number" placeholder="il tuo numero di telefono" id="Num" name="Num">
+        <input type="email" placeholder="La tua Email" id="Gmail" name="Gmail">
+    </div>
+
+    <textarea   cols="30" rows="10" placeholder="scrivi qui la tua domanda" id="Domanda" name="Domanda"></textarea>
+    <input class="btn" type="submit" value="Invia">
+</form>
+</section>
+
+<footer class="footer">
+<div class="footer-text">
+    <p style="color:var(--main-color)">Se desideri contattarmi, puoi farlo inviandomi un messaggio. Ti lascio la mia email: matteobarcellona31@gmail.com</p>
+</div>
+
+<div class="footer-iconTop">
+<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+</div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           }
+
+         :root {
+             --bg-color:rgb(27, 27, 27);
+             --second-bg-color:rgb(43, 43, 43);
+             --text-color:rgb(255, 255, 255);
+             --main-color:rgb(0, 255, 34);
+             --main-color2:rgb(24, 124, 10);
+         }
+
+         html{
+             font-size: 62.5%;
+             overflow-x:hidden;
+         }
+
+         .dark-mode {
+          --bg-color:rgb(255, 255, 255);
+          --second-bg-color:rgb(238, 238, 238);
+          --text-color:rgb(0, 0, 0);
+          --main-color:rgb(47, 0, 255);
+          --main-color2:rgb(0, 174, 255);
+        }
+
+
+           body{
+               background: var(--bg-color);
+               color: var(--text-color);
+           }
+
+           section{
+               min-height: 100vh;
+               padding: 10rem 9% 2rem;
+           }
+
+           .header {
+               position:fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               padding:2rem 9%;
+               background: var( --second-bg-color);
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               z-index: 100;
+           }
+
+
+
+           .header.sticky{
+            border-bottom: .1rem solid rgba(0,0,0,.2);
+           }
+
+           .logo{
+               font-size: 2.5rem;
+               color: var(--text-color);
+               font-weight: 600;
+               cursor: default;
+           }
+
+           .navbar a{
+               font-size: 1.7rem;
+               color: var(--text-color);
+               margin-right: 4rem;
+               transition: .3s;
+           }
+
+           .navbar a:hover,
+           .navbar a.active{
+               color: var(--main-color);
+           }
+
+           #menu-icon{
+               font-size: 2.6rem;
+               color: var(--text-color);
+               display: none;
+           }
+
+           .home {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+           }
+
+           .home-img img{
+               width: 30vw;
+               height: 30vw;
+               animation: floatImage 4s ease-in-out infinite;
+           }
+
+           @keyframes floatImage{
+             0%{
+                transform: translateY(0);
+             }
+             50%{
+                transform: translateY(-2rem);
+             }
+             100%{
+                transform: translateY(0);
+             }
+           }
+
+           .about-img img{
+               width: 20vw;
+               height: 35vw;
+           }
+
+           .home-content h3 {
+               font-size: 3.2rem;
+               font-weight: 500;
+
+           }
+
+           .home-content h3:nth-of-type(2) {
+              margin-bottom: 2rem;
+           }
+
+           span {
+               color: var(--main-color);
+           }
+
+           .home-content h1 {
+               font-size: 5.6rem;
+               font-weight: 700;
+               line-height:1.3;
+           }
+
+           .home-content p {
+             font-size: 1.9rem;
+           }
+
+           .social-media a {
+               display: inline-flex;
+               justify-content: center;
+               align-items: center;
+               width: 4rem;
+               height: 4rem;
+               background: transparent;
+               border: .2rem solid var(--main-color);
+               border-radius: 50%;
+               font-size: 2rem;
+               color: var(--main-color);
+               margin: 3rem 1.5rem 3rem 0;
+               transform: .5s ease;
+           }
+
+           .social-media a:hover{
+               background: var(--main-color);
+               color: var(--second-bg-color);
+               box-shadow: 0 0 1rem var(--main-color);
+           }
+
+           .btn {
+               display: inline-block;
+               padding: 1rem 2.8rem;
+               background:var(--main-color);
+               border-radius: 4rem;
+               box-shadow: 0 0 1rem var(--main-color);
+               font-size: 1.6rem;
+               color: var(--second-bg-color);
+               letter-spacing: .1rem;
+               font-weight: 600;
+               transition: .5s ease;
+           }
+
+           .btn:hover{
+           box-shadow: none;
+           }
+
+           .about{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 2rem;
+               background: var(--second-bg-color);
+
+           }.about-img img {
+               width: 35vw;
+           }
+
+           .heading {
+               text-align: center;
+               font-size: 4.5rem;
+           }
+
+           .about-content h2 {
+               text-align: center;
+               line-height: 1.2;
+           }
+
+           .about-content h3 {
+            font-size: 2.6rem;
+           }
+
+           .about-content p {
+               font-size: 2.6rem;
+               margin: 2rem 0 3rem;
+           }
+
+           .services h2 {
+               margin-bottom: 5rem;
+           }
+
+           .services-container {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-wrap: wrap;
+               gap: 3rem;
+           }
+
+           .services-container .services-box{
+               flex: 1 1 30rem;
+               background: var(--second-bg-color);
+               padding: 4rem 4rem 4rem;
+               border-radius: 3rem;
+               text-align: center;
+               border: .2rem solid var(--bg-color);
+
+           }
+
+           .services-container .services-box:hover {
+               border-color:var(--main-color);
+               transform: scale(1.02);
+               transition: .5s ease;
+           } 
+           .services-box i {
+               font-size: 7rem;
+               color: var(--main-color);
+           }
+
+           .services-box h3 {
+               font-size: 4rem;
+           }
+
+           .services-box p {
+               font-size: 1.6rem;
+               margin: 1rem 0 3rem;
+           }
+
+
+
+        .portfolio{
+            background-color: var(--second-bg-color);
+
+        }
+
+        .portfolio h2{
+            margin-bottom: 4rem;
+        }
+
+        .portfolio-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .portfolio-container .portfolio-box{
+            position: relative;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem var(--bg-color);
+            overflow: hidden;
+            display: flex;
+        }
+
+        .portfolio-box img{
+            width: 100%;
+            transition: .5s ease;
+        }
+
+        .portfolio-box:hover img {
+           transform: scale(1.1);
+        }
+
+        .portfolio-box .portfolio-layer{
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(5, 176, 255, 0.747),var(--main-color));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 1 4rem;
+            transform: translateY(100%);
+            transition: .5s ease;
+        }
+
+
+        .portfolio-box:hover .portfolio-layer{
+            transform: translateY(0);
+        }
+
+
+        .portfolio-layer h4{
+            font-size: 3rem;
+        }
+
+
+
+        .portfolio-layer p{
+            font-size: 1.6rem;
+            margin: .5rem 0 1rem;
+        }
+
+        .portfolio-layer a{
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 5rem;
+          height: 5rem;
+          background: var(--text-color);
+          border-radius: 50%;
+        }
+
+        .portfolio-layer a i {
+          font-size: 2rem;
+          color: var(--second-bg-color);
+        }
+
+
+           .contact h2 {
+              margin-bottom: 3rem;
+           }
+
+           .contact form {
+           max-width: 60rem;
+           margin: 1rem auto;
+           text-align: center;
+           margin-bottom: 3rem;
+           }
+
+           .contact form .input-box{
+               display: flex;
+               justify-content: space-between;
+               flex-wrap: wrap;
+
+           }
+
+           .contact form .input-box input,
+           .contact form textarea {
+            width: 100%;
+            padding: 1.4rem;
+            font-size: 1.6rem;
+            color: var(--text-color);
+            background: var(--second-bg-color);
+            border-radius: .8rem;
+            margin: .7rem 0;
+           }
+
+           .contact form .input-box input {
+            width: 49%;
+           }
+
+           .contact form textarea {
+            resize: none;
+           }
+
+           .contact form .btn {
+           margin-top: 2rem;
+           cursor: pointer;
+           }
+
+           .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem 9%;
+            background: var(--second-bg-color);
+           }
+           .footer-text p {
+            font-size: 1.6rem;
+           }
+
+           .footer-iconTop a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding:  .8rem;
+            background: var(--main-color);
+            border-radius: .8rem;
+            transition: .5s ease;
+           }
+
+
+           .footer-iconTop a:hover {
+              box-shadow: 0 0 1rem var(--main-color);
+           }
+
+           .footer-iconTop a i {
+            font-size: 2.4rem;
+            color: var(--second-bg-color);
+           }
+
+           @media(max-width:1200px){
+            html{
+                font-size: 55%;
+            }
+           }
+
+           @media(max-width:991px){
+           .header {
+            padding: 2rem 3%;
+           }
+
+           section {
+            padding: 10rem 3% 2rem;
+           }
+
+           .services {
+            padding-bottom: 7rem;
+           }
+
+           .portfolio {
+            padding-bottom: 7rem;
+           }
+
+           .contact {
+            min-height: auto;
+           }
+
+           .footer{
+            padding: 2rem 3%;
+           }
+           }
+
+           @media(max-width:768px){
+
+             #menu-icon {
+                display: block;
+             }
+
+             .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 1rem 3%;
+                background: var(--bg-color);
+                border-top: .1rem solid rgba(0, 0, 0, .2);
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+                display: none;
+             }
+
+             .navbar.active{
+                display: block;
+             }
+
+             .navbar a {
+                display: block;
+                font-size: 2rem;
+                margin: 3rem 0;
+             }
+
+             .home{
+                flex-direction: column;
+             }
+
+             .home-content h3 {
+                font-size: 2.6rem;
+             }
+
+             .home-content h1 {
+                font-size: 5rem;
+             }
+
+             .home-img img{
+                width: 70vw;
+                margin-top: 4rem;
+             }
+
+             .about{
+                flex-direction: column-reverse;
+             }
+
+             .about img{
+                width: 70vw;
+                margin-top: 4rem;
+
+             }
+
+             .services h2{
+                margin-bottom: 3rem;
+             }
+
+             .portfolio h2{
+                margin-bottom: 3rem;
+             }
+
+
+             .portfolio-container{
+                grid-template-columns: repeat(2,1fr);
+             }
+           }
+
+           @media(max-width:768px){
+            .portfolio-container{
+                grid-template-columns: 1fr;
+            }
+           }
+
+           @media(max-width:450px){
+            html{
+                font-size: 50%;
+            }
+
+            .contact form .input-box input{
+                width: 100%;
+            }
+           }
+
+           @media(max-width:365px){
+            .home-img{
+                width: 90vw;
+            }
+
+            .about-img img{
+                width: 90v
+            }
+
+            .footer {
+                flex-direction: column-reverse;
+            }
+
+            .footer p{
+              text-align: center;
+              margin-top: 2rem;
+            }
+           }
+ 
+      </style>
+</body>
+</html>
+
+      
+<script>
+    window.onload = function() {
+      document.onselectstart = function() { return false; }
+    }
   </script>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script>
 
-  <script src="assets/js/main.js"></script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
 
-</body>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+         }
 
-</html>
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        };
+
+
+            let sections = document.querySelectorAll('section');
+            let navLinks = document.querySelectorAll('header nav a');
+
+            window.onscroll = () => {
+                sections.forEach(sec =>{
+                    let top = window.scrollY;
+                    let offset = sec.offsetTop - 150;
+                    let height = sec.offsetHeight;
+                    let id = sec.getAttribute('id');
+
+                    if(top >= offset && top < offset + height){
+                       navLinks.forEach(links =>{
+                        links.classList.remove('active');
+                        document.querySelector('header nav a[href*='+id+']').classList.add('active');
+                       });
+                    };
+                });
+                let header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY>100);
+                menuIcon.classList.remove('bx-x');
+                navbar.classList.remove('active');
+            };
+
+
+            ScrollReveal({
+
+                distance:'80px',
+                duration :2000,
+                delay:200
+            });
+
+            ScrollReveal().reveal('.home-content, .heading',{origin:'top'});
+            ScrollReveal().reveal('.home-img, .services-container,.portfolio-box,.contact form',{origin:'buttom'});
+            ScrollReveal().reveal('.home-content h1, .about-img',{origin:'left'});
+            ScrollReveal().reveal('.home-content p, .about-content',{origin:'right'});
+
+            const typed= new Typed('.multiple-text',{
+                strings:['programmazione informatica.','creatore videogames.','creativo del web.'],
+                typeSpeed:100,
+                backSpeed:100,
+                backDelay:1000,
+                loop:true
+            });
+
+
+      </script>
